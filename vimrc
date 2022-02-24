@@ -19,9 +19,11 @@ set number
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
+autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg
+autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 
 " Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
+"set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
